@@ -902,7 +902,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
   padding: 80px 0 60px 0;
   display: flex;
@@ -2898,6 +2898,10 @@ section,
 
 /* loop css farhan  */
 
+.mobile_circle {
+  background-color: var(--Tealish-Blue) !important;
+}
+
 .separator {
   opacity: 0.25;
   border: 1px solid #0E1B28;
@@ -2942,6 +2946,7 @@ section,
   /* background:  url("../img/blur-layer.svg") center/cover no-repeat; */
   background: url(../img/blur-layer.svg) center / contain no-repeat;
   background-position: right;
+  background-size: 70rem 68rem;
 }
 
 
@@ -3205,8 +3210,8 @@ section,
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 50px;
+  font-size: 52px;
+  line-height: 62px;
   letter-spacing: -0.04em;
   color: #0E1B28;
   margin-bottom: 10px;
@@ -3659,14 +3664,19 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-ul.custom-bullets {
-  /* Using SVG as bullet image */
-  list-style-image: url('../img/bulltes.png');
-
-  padding-left: 25px;
-
+ul.custom-bullets li {
+  background-repeat: no-repeat;
+  padding-left: 40px;
   margin: 20px 0;
-  line-height: 1.6;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  vertical-align: top;
+  color: #000000;
+  list-style: none;
+  background-image: url(../img/bulltes.png);
 }
 
 /* Optional: Style the list items */
@@ -3752,8 +3762,8 @@ ul.custom-bullets li::marker {
 
 .dots_imgss {
   position: absolute;
-  top: 50%;
-  left: 5px;
+  top: 45%;
+  left: 12px;
   transform: unset;
 }
 
@@ -3818,34 +3828,34 @@ ul.custom-bullets li::marker {
 }
 
 
-.mobile_btns .btn-get-started{
+.mobile_btns .btn-get-started {
   color: var(--contrast-color);
-    background: var(--accent-color);
-    border-radius: 4px;
-    padding: 28px 35px;
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
+  background: var(--accent-color);
+  border-radius: 4px;
+  padding: 28px 35px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .mobile_btns .btn-how-works {
   background: #0E1B28;
-    backdrop-filter: blur(12.5px);
-    border-radius: 4px;
-    padding: 28px 35px;
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
+  backdrop-filter: blur(12.5px);
+  border-radius: 4px;
+  padding: 28px 35px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
- .offcanvas{
+.offcanvas {
   width: 100% !important;
 }
 
@@ -3869,35 +3879,140 @@ ul.custom-bullets li::marker {
 
 
 .chevron_toggle i {
-  color:rgba(34, 97, 239, 1);
+  color: rgba(34, 97, 239, 1);
   font-size: 20px;
 }
+
+.bottom-left {
+  position: absolute;
+  bottom: 45px;
+  left: 16px;
+}
+.bottom-left h5{
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.03em;
+  font-size: clamp(56px, 5vw, 120px);
+  line-height: clamp(56px, 5vw, 120px);
+  color: #FFFFFF;
+}
+
+.bottom-left p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+
+}
+
+.smr11 {
+  position: absolute;
+  left: -50px;
+  width: 80px;
+  transform: rotate(90deg);
+  top: 50%;
+}
+
+.dots_img_brands {
+  position: absolute;
+  margin-top: 50rem;
+  width: 80px;
+  right: 15%;
+}
+
 /* ends  */
 
 
 /* media query farhan loop */
 
+@media only screen and (max-width: 1920px) and (min-width: 1439px) {
+  .brands_text {
+    top: 52rem;
+  }
+}
 
-@media only screen and (min-width: 1440px) {
+/* @media only screen and (min-width: 1440px) {
   .brands_text {
     top: 45rem;
 }
-}
+} */
 
 
 @media only screen and (max-width: 600px) {
 
+  .play_video  {
+    top: 25px;
+    right: 40px;
+  }
+
+  .brands_text {
+    top: 23rem;
+}
+
+  .slider_box {
+    padding: 30px 23px;
+    margin-bottom: 25px;
+  }
+
+  .my-svg{
+    display: none;
+  }
+  
+  .sv_eight_per {
+    margin-bottom: 20px;
+  }
+
+  .mbss {
+    padding: 0px  50px;
+  }
+  
+  .hero h1{
+    padding: 0px 48px;
+  }
+  
+  .hero{
+    padding-top: 50px;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 18px;
+    left: 16px;
+}
+
+  .bottom-left p {
+   
+    max-width: 270px;
+}
+
+  .header .btn-getstarted , .smr11 , .dots_img_brands , .book_call {
+    display: none !important;
+  }
+
+  .btn-how-works {
+    padding: 15px 20px;
+  }
+
   .footer .footer-links {
     margin-bottom: 10px;
-}
-  .content {
+  }
+
+  .dots_img_new_sec {
     display: none;
     padding: 10px;
     margin-top: 5px;
   }
-  .toggle-btn , .toggle-btn {
+
+  .toggle-btn,
+  .toggle-btn {
     cursor: pointer;
   }
+
   .arrow {
     margin-left: 8px;
     transition: transform 0.3s ease;
@@ -3906,6 +4021,7 @@ ul.custom-bullets li::marker {
   .img_faq {
     display: none;
   }
+
   .price_sec {
     margin-bottom: 20px;
   }
@@ -4022,12 +4138,13 @@ ul.custom-bullets li::marker {
   }
 
   .blur_layer {
-    background: url(../img/blur-layer.svg) center / cover no-repeat;
-    background-position: center left;
+    background: url(../img/home-bg.png) center / cover no-repeat;
+    background-position: top center ;
+    background-size: 370% 160%;
   }
 
   .circle_btn {
-
+    background-color: var(--Tealish-Blue) !important;
     position: absolute;
     right: 25px;
     z-index: 9999;
@@ -4054,8 +4171,12 @@ ul.custom-bullets li::marker {
     left: -14px;
     z-index: 9999;
     bottom: 0;
-  }
-
+    background-color: rgba(255, 255, 255, 0.65) !important;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(22.5px);
+    border-radius: 900px;
+    bottom: 55px;
+}
 
 
   .black_bg p {
@@ -4113,14 +4234,14 @@ ul.custom-bullets li::marker {
   }
 
   .brands_Sec {
-    background-image: url(../img/bg-1.png);
-    background-size: cover;
+    background-image: url(../img/phone-mobile.png);
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     overflow: visible;
-    height: 71vh;
+    height: 55vh;
     padding-top: 0px;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 90px 0px;
   }
 
   .brands_text h4 {
